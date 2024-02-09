@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <h1>our links:</h1>
+    <ol>
+        <li><a href="{% url 'PageList'%}">page list</a> </li>
+        <li><a href="{% url 'About'%}">about creatures</a> </li>
+        <li><a href="{% url 'Contact'%}">contact us</a> </li>
+    </ol>
+
+    {% block sequence%}{% endblock sequence %}
+
+</body>
+</html>

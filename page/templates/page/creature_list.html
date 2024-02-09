@@ -1,0 +1,10 @@
+{% extends '_base.html'%}
+
+{% block title %}about us{% endblock title %}
+
+{% block sequence %}
+    {% for jounal in journals_list %}
+        <h1>{{ jounal.name }}</h1>
+        <p>{{ jounal.text }}</p>
+    {% endfor %}
+{% endblock sequence %}

@@ -1,0 +1,9 @@
+{%extends '_base.html'%}
+
+{% block title %}Main page{% endblock title %}
+
+{% block sequence %}
+    {% for note in notes_list %}
+    <h1>{{ note.date }}</h1>
+    {% endfor %}
+{% endblock sequence%}
